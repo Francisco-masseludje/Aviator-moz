@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aviator Moçambique KB ✨</title>
+<style>
+  body {
+    margin: 0; background: #111; color: #eee; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  header {
+    background: #e91e63;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+  }
+  header span.magic {
+    animation: glow 2s infinite alternate;
+  }
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #fff; }
+    100% { text-shadow: 0 0 20px #ff69b4; }
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #222;
+    padding: 10px 0;
+  }
+  nav a {
+    color: #e91e63;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ff69b4;
+  }
+  section {
+    max-width: 700px;
+    margin: 20px auto;
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  h2 {
+    color: #e91e63;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .simulator {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .simulator input[type="number"] {
+    width: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+  .simulator button {
+    padding: 10px 20px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .simulator button:hover {
+    background: #ff69b4;
+  }
+  .result {
+    margin-top: 15px;
+    font-size: 1.3em;
+    font-weight: 700;
+    min-height: 2em;
+  }
+  .plane-container {
+    position: relative;
+    height: 80px;
+    margin-top: 15px;
+    overflow: hidden;
+    background: #333;
+    border-radius: 10px;
+  }
+  .plane {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    transition: left 3s ease-out;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    color: #888;
+    font-size: 0.9em;
+  }
+  ul.strategies {
+    padding-left: 20px;
+  }
+  .history, .ranking {
+    background: #111;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<header>
+  Aviator Moçambique KB <span class="magic">✨</span>
+</header>
+<nav>
+  <a href="#how">Como Jogar</a>
+  <a href="#strategy">Estratégias</a>
+  <a href="#simulator">Simulador</a>
+  <a href="#payment">Depósito & Levantamento</a>
+  <a href="#partners">Cassinos Parceiros</a>
+</nav>
+
+<section id="how">
+  <h2>Como Jogar</h2>
+  <p>O Aviator é um jogo de aposta simples: o avião começa a voar e o multiplicador vai aumentando. Deves retirar o dinheiro antes do avião “voar para longe”. Se conseguires, ganhas o valor apostado vezes o multiplicador. Se esperar demais, perdes a aposta.</p>
+</section>
+
+<section id="strategy">
+  <h2>Estratégias</h2>
+  <ul class="strategies">
+    <li>Retirar cedo para garantir lucro pequeno mas seguro.</li>
+    <li>Aumentar apostas progressivamente após perdas.</li>
+    <li>Observar padrões e estatísticas do voo.</li>
+    <li>Não apostar mais do que pode perder.</li>
+  </ul>
+</section>
+
+<section id="simulator" class="simulator">
+  <h2>Simulador de Apostas</h2>
+  <input type="number" id="betAmount" placeholder="Valor da aposta (MZN)" min="1" max="10000" />
+  <button id="startBtn">Apostar</button>
+  <div class="result" id="result"></div>
+  <div class="plane-container">
+    <img src="https://i.imgur.com/zrFjxDW.png" alt="Avião" class="plane" id="plane" />
+  </div>
+  <div class="history" id="history"></div>
+  <div class="ranking" id="ranking"></div>
+</section>
+
+<section id="payment">
+  <h2>Depósito & Levantamento</h2>
+  <p>Para fazer depósitos e levantamentos seguros, utilize o número oficial abaixo para ambos os métodos Emola e M-Pesa:</p>
+  <ul>
+    <li><strong>Emola & M-Pesa:</strong> +258 87 369 5677</li>
+  </ul>
+  <p>Envie o valor desejado para este número e envie o comprovativo para a nossa equipa para confirmação rápida e processamento.</p>
+</section>
+
+<section id="partners">
+  <h2>Cassinos Parceiros</h2>
+  <ul>
+    <li><a href="https://example-casino1.com" target="_blank" rel="noopener" style="color:#e91e63;">Casino Moçambique</a></li>
+    <li><a href="https://example-casino2.com" target="_blank" rel="noopener" style="color:#e91e63;">BetMoz</a></li>
+    <li><a href="https://example-casino3.com" target="_blank" rel="noopener" style="color:#e91e63;">MozBet</a></li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Aviator Moçambique KB — Joga com responsabilidade!
+</footer>
+
+<script>
+  const plane = document.getElementById('plane');
+  const resultEl = document.getElementById('result');
+  const betAmountInput = document.getElementById('betAmount');
+  const startBtn = document.getElementById('startBtn');
+  const historyEl = document.getElementById('history');
+  const rankingEl = document.getElementById('ranking');
+
+  let history = [];
+  let ranking = [];
+
+  function updateHistory() {
+    if(history.length === 0) {
+      historyEl.textContent = 'Nenhuma aposta feita ainda.';
+      return;
+    }
+    historyEl.innerHTML = '<strong>Histórico (últimas 10 apostas):</strong><br>' + history.slice(-10).map((h,i) => {
+      return `${i+1}. Valor: MZN ${h.bet}, Multiplicador: x${h.multiplier.toFixed(2)}, Resultado: ${h.win ? 'Ganhou' : 'Perdeu'}`;
+    }).join('<br>');
+  }
+
+  function updateRanking() {
+    if(ranking.length === 0) {
+      rankingEl.textContent = 'Nenhum ganho registrado ainda.';
+      return;
+    }
+    rankingEl.innerHTML = '<strong>Top 5 maiores ganhos simulados:</strong><br>' + ranking.map((r,i) => {
+      return `${i+1}. MZN ${r.toFixed(2)}`;
+    }).join('<br>');
+  }
+
+  function startGame() {
+    let bet = parseFloat(betAmountInput.value);
+    if(isNaN(bet) || bet < 1) {
+      resultEl.textContent = 'Por favor, insira um valor válido para apostar (mínimo MZN 1).';
+      return;
+    }
+    resultEl.textContent = '';
+    plane.style.transition = 'none';
+    plane.style.left = '0px';
+
+    setTimeout(() => {
+      plane.style.transition = 'left 3s ease-out';
+      plane.style.left = '600px';
+    }, 100);
+
+    let multiplier = (Math.random() * 4 + 1).toFixed(2);
+    let win = Math.random() < 0.7;
+
+    setTimeout(() => {
+      if (win) {
+        let gain = bet * multiplier;
+        resultEl.textContent = `🎉 Ganhou MZN ${gain.toFixed(2)} (Multiplicador: x${multiplier})`;
+        ranking.push(gain);
+        ranking.sort((a, b) => b - a);
+        if (ranking.length > 5) ranking = ranking.slice(0, 5);
+      } else {
+        resultEl.textContent = `💥 Perdeu a aposta! (Multiplicador: x${multiplier})`;
+      }
+
+      history.push({ bet, multiplier: parseFloat(multiplier), win });
+      updateHistory();
+      updateRanking();
+    }, 3100);
+  }
+
+  startBtn.addEventListener('click', startGame);
+</script>
+</body>
+</html>
